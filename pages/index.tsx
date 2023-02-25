@@ -41,8 +41,8 @@ export default function Home() {
               </ul>
 
               <div className="social-icons  flex px-4 lg:hidden">
-                <a href='#' className='text-2xl cursor-pointer px-2'><AiFillLinkedin /></a>
-                <a href='#' className='text-2xl cursor-pointer px-2'><AiFillGithub /></a>
+                <a href='https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/' target='_blank' className='text-2xl cursor-pointer px-2'><AiFillLinkedin /></a>
+                <a href='https://github.com/sphamandla-s' target='_blank' className='text-2xl cursor-pointer px-2'><AiFillGithub /></a>
               </div>
 
 
@@ -84,7 +84,7 @@ export default function Home() {
                   </p>
 
                   <div className="resume py-4">
-                    <a href='./Siphamandla Mdletshe Developer Resume.pdf' target='_blank' download={true} className='group bg-gradient-to-r from-rose-600 to-blue-600 py-2 px-6 text-white rounded-md mt-8 flex w-fit items-center gap-2'>RESUME <span className='group-hover:rotate-90'><AiOutlineArrowDown /></span></a>
+                    <a href='./Siphamandla Mdletshe Developer Resume.pdf' target='_blank' download={true} className='group bg-gradient-to-r from-rose-600 to-blue-600 py-2 px-6 text-white rounded-md mt-8 flex w-fit items-center gap-2 hover:scale-110 duration-300'>RESUME <span className='group-hover:rotate-90 duration-300'><AiOutlineArrowDown /></span></a>
                   </div>
                 </div>
 
@@ -102,14 +102,14 @@ export default function Home() {
           <section className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
             <ul>
               <li className='flex justify-between items-center w-40 h-14 px-4 bg-gray-300 rounded-tr-md dark:bg-gray-700 ml-[-100px] hover:ml-[-10px] hover:rounded '>
-                <a href="#" className='flex justify-between w-full items-center'>
+                <a href="https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/" target='_blank' className='flex justify-between w-full items-center'>
                   <>
                     Linkedin <AiFillLinkedin size={30} />
                   </>
                 </a>
               </li>
               <li className='flex justify-between items-center w-40 h-14 px-4 bg-gray-300 dark:bg-gray-700 ml-[-100px] hover:ml-[-10px] hover:rounded '>
-                <a href="#" className='flex justify-between w-full items-center'>
+                <a href="https://github.com/sphamandla-s" target='_blank' className='flex justify-between w-full items-center'>
                   <>
                     GitHub <BsGithub size={30} />
                   </>
@@ -168,14 +168,14 @@ export default function Home() {
 
           <Projects />
 
-          <section id="contact" className='py-5'>
-            <h1>Let Talk.</h1>
-            <div>
-              <form action="" method="get">
-                <input type="text" name='name' placeholder='Enter Your Name' className='p-2 bg-transparent rounded-md focus:outline-none' />
-                <input type="text" name='email' placeholder='Enter email' className='p-2 bg-transparent rounded-md focus:outline-none' />
-                <textarea name="message"  rows={10}></textarea>
-
+          <section id="contact" className='w-full h-screen'>
+            <h1 className='text-7xl text-center py-4'>Let Talk.</h1>
+            <div className='flex justify-center items-center'>
+              <form action="https://getform.io/f/c8d0c9cd-2917-496b-ad84-df1aed385a0e" method="get" className='flex flex-col w-full md:w-1/2'>
+                <input type="text" name='name' placeholder='Enter Your Name' className='p-2 bg-transparent rounded-md focus:outline-none border-2' />
+                <input type="text" name='email' placeholder='Enter email' className='p-2 bg-transparent rounded-md focus:outline-none border-2 my-4' />
+                <textarea name="message" className='rounded-md focus:outline-none p-2 bg-transparent border-2' placeholder='Type Your Message'  rows={10}></textarea>
+                <button  className='bg-gradient-to-r from-rose-600 to-blue-600 m-auto px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-500'>Talk To Me</button>
               </form>
             </div>
 
