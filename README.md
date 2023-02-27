@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio Website
+# Description
+My Portfolio Website is a personal website that showcases my skills, projects, and experience to potential employers or clients. The website is built using Next.js, a React-based framework for building server-side rendered web applications, and Tailwind CSS, a utility-first CSS framework for styling.
 
-## Getting Started
+# Installation
+To run the website locally, you will need to have Node.js and npm (or yarn) installed on your system. Once you have Node.js and npm installed, you can download the website files from the GitHub repository and run the following commands in your terminal:
 
-First, run the development server:
+# bash
+Copy code
+cd my-portfolio-website
+npm install # or yarn install
+npm run dev # or yarn dev
+This will start the development server, and you can view the website by navigating to http://localhost:3000 in your web browser.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Features
+# Home
+The home page of the website displays a brief introduction.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Projects
+The projects page displays a list of my recent projects, including descriptions, screenshots, and links to live demos or source code.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# About
+The about page provides more detailed information about my experience, education, interests and Skills.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+# Contact
+The contact page contains a contact form that visitors can use to send me a message directly from the website.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Customization
+You can easily customize the website by modifying the files in the "src" folder. For example, you can change the content of the pages, add new pages, or modify the styling using Tailwind CSS.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can also deploy the website to a hosting service of your choice, such as Vercel, by following the deployment instructions for Next.js.
 
-## Learn More
+# Credits
+This website was created by Siphamadla Mdletshe, using Next.js and Tailwind CSS. The website icons were obtained from @React-icons.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
