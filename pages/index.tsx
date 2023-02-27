@@ -25,14 +25,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-white px-10 dark:bg-gray-900 dark:text-white'>
-        <header className=' min-h-screen'>
+        <header className=' min-screen'>
           <nav className='py-10 mb-12 flex justify-between align-middle'>
-            <h1 id="logo" className='text-xl'>
+            <h1 id="logo" className='text-3xl'>
               SSM
             </h1>
 
             <div className="flex items-center">
-              <ul className='hidden md:flex'>
+              <ul className='hidden md:flex text-2xl'>
                 <li className=' px-4 capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#banner">Home</a></li>
                 <li className=' px-4  capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#about">About</a></li>
                 <li className=' px-4  capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#projects">Projects</a></li>
@@ -75,6 +75,7 @@ export default function Home() {
             <section id='banner' className='py-10'>
               <div className="flex flex-col items-center justify-center md:flex-row">
                 <div className="flex-col">
+                  <p>Hello, it me</p>
                   <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
                   <h3 className='text-2xl py-2 text-blue-500'>Full stack Software Developer</h3>
                   <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400 max-w-md'>
@@ -83,7 +84,7 @@ export default function Home() {
                     and bringing them to life through design and code.'
                   </p>
 
-                  <div className="resume py-4">
+                  <div className="resume py-4 text-center">
                     <a href='./Siphamandla Mdletshe Developer Resume.pdf' target='_blank' download={true} className='group bg-gradient-to-r from-rose-600 to-blue-600 py-2 px-6 text-white rounded-md mt-8 flex w-fit items-center gap-2 hover:scale-110 duration-300'>RESUME <span className='group-hover:rotate-90 duration-300'><AiOutlineArrowDown /></span></a>
                   </div>
                 </div>
@@ -132,9 +133,9 @@ export default function Home() {
             </ul>
           </section>
 
-          <section id="about" className='py-5'>
+          <section id="about" className='py-5 min-h-screen'>
             <div className="about-header">
-              <h1 className="text-3xl text-center">
+              <h1 className="text-7xl text-center">
                 Readme.
               </h1>
               <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400'>
@@ -171,7 +172,7 @@ export default function Home() {
           <section id="contact" className='w-full h-screen'>
             <h1 className='text-7xl text-center py-4'>Let Talk.</h1>
             <div className='flex justify-center items-center'>
-              <form action="https://getform.io/f/c8d0c9cd-2917-496b-ad84-df1aed385a0e" method="get" className='flex flex-col w-full md:w-1/2'>
+              <form action="https://getform.io/f/c8d0c9cd-2917-496b-ad84-df1aed385a0e" method="post" className='flex flex-col w-full md:w-1/2'>
                 <input type="text" name='name' placeholder='Enter Your Name' className='p-2 bg-transparent rounded-md focus:outline-none border-2' />
                 <input type="text" name='email' placeholder='Enter email' className='p-2 bg-transparent rounded-md focus:outline-none border-2 my-4' />
                 <textarea name="message" className='rounded-md focus:outline-none p-2 bg-transparent border-2' placeholder='Type Your Message'  rows={10}></textarea>
