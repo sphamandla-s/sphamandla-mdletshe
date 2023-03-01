@@ -40,9 +40,9 @@ export default function Home() {
 
               </ul>
 
-              <div className="social-icons  flex px-4 lg:hidden">
-                <a href='https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/' target='_blank' className='text-2xl cursor-pointer px-2'><AiFillLinkedin /></a>
-                <a href='https://github.com/sphamandla-s' target='_blank' className='text-2xl cursor-pointer px-2'><AiFillGithub /></a>
+              <div className="social-icons flex lg:hidden">
+                <a href='https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/' target='_blank' className='text-2xl cursor-pointer px-4'><AiFillLinkedin /></a>
+                <a href='https://github.com/sphamandla-s' target='_blank' className='text-2xl cursor-pointer px-4'><AiFillGithub /></a>
               </div>
 
 
@@ -55,11 +55,11 @@ export default function Home() {
               </div>
 
               {nav && (
-                <ul className=' flex flex-col justify-center items-center absolute top-0 right-0 w-full h-screen bg-black md:hidden'>
-                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#banner">Home</a></li>
-                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#about">About</a></li>
-                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#projects">Projects</a></li>
-                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200'><a href="#contact">Contact</a></li>
+                <ul className=' flex flex-col justify-center items-center absolute top-0 right-0 w-full h-screen bg-black text-white md:hidden'>
+                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200' onClick={() => setNav(false)}><a href="#banner">Home</a></li>
+                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200' onClick={() => setNav(false)}><a href="#about">About</a></li>
+                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200' onClick={() => setNav(false)}><a href="#projects">Projects</a></li>
+                  <li className=' py-4 text-3xl capitalize cursor-pointer font-medium hover:text-gray-400 transition-all duration-200' onClick={() => setNav(false)}x><a href="#contact">Contact</a></li>
 
                 </ul>
               )}
@@ -75,7 +75,7 @@ export default function Home() {
             <section id='banner' className='py-10'>
               <div className="flex flex-col items-center justify-center md:flex-row">
                 <div className="flex-col">
-                  <p>Hello, it me</p>
+                  
                   <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
                   <h3 className='text-2xl py-2 text-blue-500'>Full stack Software Developer</h3>
                   <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400 max-w-md'>
