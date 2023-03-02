@@ -83,9 +83,9 @@ export default function Home() {
                   <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
                   <h3 className='text-2xl py-2 text-blue-500'>Full stack Software Developer</h3>
                   <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400 max-w-md'>
-                    'bringing things to life with code is my superpower. Happiest when I'm learning, building
+                    bringing things to life with code is my superpower. Happiest when I'm learning, building
                     and contributing to meaningful projects. I love building high-quality products
-                    and bringing them to life through design and code.'
+                    and bringing them to life through design and code.
                   </p>
 
                   <div className="resume py-4 text-center">

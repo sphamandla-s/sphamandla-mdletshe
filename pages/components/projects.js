@@ -33,7 +33,7 @@ export const Projects = () => {
     return (
         <section id="projects" className='w-full h-fit py-20'>
             <h1 className="md:text-7xl text-center text-4xl">
-                Some Things I’ve Built.
+                Some Things I&apos;ve Built.
             </h1>
 
             <Carousel responsive={responsive} infinite={true} className="pt-20">
