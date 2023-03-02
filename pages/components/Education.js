@@ -1,4 +1,4 @@
-export default Education = ()=>{
+export default function Education(){
     return (
         <div id="education" className='font-medium'>
                 <div className='pb-5'>
