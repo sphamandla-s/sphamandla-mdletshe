@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import HtmlCss from 'public/assets/images/icons8-html-64.png';
 import Javascript from 'public/assets/images/icons8-javascript-48.png';
 import Python from 'public/assets/images/icons8-python-48.png';
 import Java from 'public/assets/images/icons8-java-48.png';
