@@ -1,10 +1,16 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
-import DemoImg from 'public/assets/images/ai-takeda--461rTEnnso-unsplash.jpg'
+import { HiArrowCircleRight, HiLink } from 'react-icons/hi'
+import DemoImg from 'public/assets/images/contact-img.svg'
 import SpaceWars from 'public/assets/images/ai-takeda--461rTEnnso-unsplash.jpg'
-import Flutter from 'public/assets/images/icons8-flutter-48.png'
-import { HiLink } from 'react-icons/hi'
+import Password from 'public/assets/images/regularguy-eth-j7mGBT2hyM8-unsplash.jpg'
+import Notify from 'public/assets/images/sigmund-xLZ9EP4hJtQ-unsplash.jpg'
+import Portfolio from 'public/assets/images/Screenshot from 2023-03-01 18-13-24.png'
+import Advice from 'public/assets/images/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg'
+import Flash from 'public/assets/images/luis-villasmil-mlVbMbxfWI4-unsplash.jpg'
+import Task from 'public/assets/images/contact-img.svg'
+
 
 
 export const Projects = () => {
@@ -27,24 +33,24 @@ export const Projects = () => {
     };
     return (
         <section id="projects" className='w-full h-fit py-20'>
-            <h1 className="text-7xl text-center sm:text-xl">
+            <h1 className="md:text-7xl text-center text-4xl">
                 Some Things I’ve Built.
             </h1>
 
-            <Carousel responsive={responsive} infinite={true} className="py-20">
-                <div className=" relative overflow-hidden rounded-md group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+            <Carousel responsive={responsive} infinite={true} className="pt-20">
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={Flash} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
-                        <h3 className="mb-5 text-2xl font-bold">Pro Manager</h3>
+                        <h3 className="mb-5 text-2xl font-bold">Slogger</h3>
                         <p>
-                        Pro Manager is a web-based project management tool that helps teams manage 
-                        their projects using the Agile methodology.
+                            Pro Manager is a web-based project management tool that helps teams manage
+                            their projects using the Agile methodology.
                         </p>
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/pro_mananger" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-md group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={Notify} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">NotifyMeSA</h3>
                         <p>
@@ -55,8 +61,8 @@ export const Projects = () => {
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/NotifyMeSA" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-md group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={Password} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Password Breaker</h3>
                         <p>
@@ -66,8 +72,8 @@ export const Projects = () => {
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/password-cracker-with-python-recursion" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-md group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={SpaceWars} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Space Wars</h3>
                         <p>
@@ -78,8 +84,8 @@ export const Projects = () => {
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Space-wars-with-pygame" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-md group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={Portfolio} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Portfolio Website</h3>
                         <p>
@@ -89,8 +95,8 @@ export const Projects = () => {
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/sphamandla-mdletshe" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-lg group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-lg group m-2 h-96">
+                    <Image src={Advice} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Advice Generator</h3>
                         <p>
@@ -102,8 +108,8 @@ export const Projects = () => {
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/advice-generator-app" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
-                <div className=" relative overflow-hidden rounded-lg group">
-                    <Image src={DemoImg} alt={''} className="group-hover:scale-110 duration-500" />
+                <div className=" relative overflow-hidden rounded-lg group mx-2 h-96">
+                    <Image src={Task} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Task Manager</h3>
                         <p>
@@ -115,6 +121,10 @@ export const Projects = () => {
                     </div>
                 </div>
             </Carousel>
+
+            <div className="text-center float-right pb-5">
+                <a href="https://github.com/sphamandla-s" className='group bg-gradient-to-r from-rose-600 to-blue-600 py-2 px-6 text-white rounded-md mt-8 flex w-fit items-center gap-2 hover:scale-110 duration-300'>View More <span className='group-hover:rotate-90 duration-300'><HiArrowCircleRight /></span></a>
+            </div>
 
         </section>
     )

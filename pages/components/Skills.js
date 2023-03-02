@@ -16,6 +16,7 @@ import NextJs from 'public/assets/images/icons8-next.js-48.png';
 import Dart from 'public/assets/images/icons8-dart-48.png';
 import Html from 'public/assets/images/icons8-html-5-64.png';
 import Css from 'public/assets/images/icons8-css3-48.png';
+import Linux from 'public/assets/images/icons8-linux-48.png';
 
 
 
@@ -88,6 +89,10 @@ export const Skills = () => {
         <div className=' shadow-md shadow-blue-800  hover:scale-105 duration-500 py-2 rounded-lg'>
         <Image src={Dart} alt='' className='w-20 mx-auto' />
         <p className='mt-4'>Dart</p>
+        </div>
+        <div className=' shadow-md shadow-yellow-500  hover:scale-105 duration-500 py-2 rounded-lg'>
+        <Image src={Linux} alt='' className='w-20 mx-auto' />
+        <p className='mt-4'>Linux</p>
         </div>
       </div>
 

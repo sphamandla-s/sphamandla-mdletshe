@@ -16,6 +16,8 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [tabs, setTabs] = useState('skills');
   const [nav, setNav] = useState(false);
+  
+  
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -27,9 +29,11 @@ export default function Home() {
       <main className='bg-white px-10 dark:bg-gray-900 dark:text-white'>
         <header className=' min-screen'>
           <nav className='py-10 mb-12 flex justify-between align-middle'>
-            <h1 id="logo" className='text-3xl'>
+            <div className="bg-rose-500 rounded-tl-2xl rounded-tr-xl rounded-br-3xl rounded-bl-xl w-28">
+            <h1 id="logo" className='text-3xl text-center font-thin'>
               SSM
             </h1>
+            </div>
 
             <div className="flex items-center">
               <ul className='hidden md:flex text-2xl'>
@@ -169,7 +173,7 @@ export default function Home() {
 
           <Projects />
 
-          <section id="contact" className='w-full h-screen'>
+          <section id="contact" className='w-full h-screen mt-10 py-5'>
             <h1 className='text-7xl text-center py-4'>Let Talk.</h1>
             <div className='flex justify-center items-center'>
               <form action="https://getform.io/f/c8d0c9cd-2917-496b-ad84-df1aed385a0e" method="post" className='flex flex-col w-full md:w-1/2'>
