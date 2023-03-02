@@ -21,7 +21,7 @@ import Linux from 'public/assets/images/icons8-linux-48.png';
 
 
 
-export const Skills = () => {
+export default function Skills(){
   return (
     <div id='skills'>
       <div className='w-full grid grid-cols-2 sm:grid-cols-3 text-center gap-8 py-8'>

@@ -12,7 +12,7 @@ import Task from 'public/assets/images/nathan-dumlao-5Hl5reICevY-unsplash.jpg'
 
 
 
-export const Projects = () => {
+export default Projects = () => {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
