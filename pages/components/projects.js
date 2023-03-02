@@ -33,7 +33,8 @@ export const Projects = () => {
     return (
         <section id="projects" className='w-full h-fit py-20'>
             <h1 className="md:text-7xl text-center text-4xl">
-                Some Things I&apos;ve Built.
+                Some Things I&apos;
+                ve Built.
             </h1>
 
             <Carousel responsive={responsive} infinite={true} className="pt-20">
@@ -43,7 +44,7 @@ export const Projects = () => {
                         <h3 className="mb-5 text-2xl font-bold">Flashcards Pro</h3>
                         <p>
                             An app designed to make it easy for anyone to
-                            create and manage their own flashcards. The app uses OpenAI's
+                            create and manage their own flashcards. The app uses OpenAI&apos;s
                             API to summarize any text to 20 words or less, making it easy
                             for the user to understand and create flashcards.
                         </p>
@@ -102,7 +103,7 @@ export const Projects = () => {
                         <h3 className="mb-5 text-2xl font-bold">Slogger</h3>
                         <p>
                         Slogger is a social media-style blog platform that allows users to 
-                        post their own blogs, view other users' blogs, and interact with 
+                        post their own blogs, view other users blogs, and interact with 
                         them through comments, likes, and shares.
 
                         </p>
