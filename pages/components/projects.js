@@ -47,7 +47,7 @@ export const Projects = () => {
                             API to summarize any text to 20 words or less, making it easy
                             for the user to understand and create flashcards.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Flashcards-Pro" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Flashcards-Pro" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
@@ -59,7 +59,7 @@ export const Projects = () => {
                             current news, past news articles, load shedding schedules,
                             and note-taking functionality.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/NotifyMeSA" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/NotifyMeSA" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
@@ -70,7 +70,7 @@ export const Projects = () => {
                             A recursive algorithm to crack passwords by trying every possible
                             combination of characters until the correct password is found.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/password-cracker-with-python-recursion" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/password-cracker-with-python-recursion" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
@@ -82,7 +82,7 @@ export const Projects = () => {
                             where players control a spaceship to fight off waves of enemy spaceships
                             and bosses. The game is coded using Python and Pygame.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Space-wars-with-pygame" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Space-wars-with-pygame" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
@@ -93,7 +93,7 @@ export const Projects = () => {
                             My personal website that showcases my skills,
                             projects, and experience to potential employers or clients.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/sphamandla-mdletshe" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/sphamandla-mdletshe" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-lg group m-2 h-96">
@@ -106,7 +106,7 @@ export const Projects = () => {
                         them through comments, likes, and shares.
 
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/slogger" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/slogger" target="_blank" rel="noreferrer" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-lg group mx-2 h-96">
@@ -118,7 +118,7 @@ export const Projects = () => {
                             The application is built using HTML, CSS, Bootstrap, EJS, Node.js, Express, and MongoDB.
 
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/task-manager" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/task-manager" target="_blank" rel="noreferrer"  ><HiLink /></a>
                     </div>
                 </div>
             </Carousel>

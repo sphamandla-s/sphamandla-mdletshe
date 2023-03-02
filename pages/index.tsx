@@ -45,8 +45,8 @@ export default function Home() {
               </ul>
 
               <div className="social-icons flex lg:hidden">
-                <a href='https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/' target='_blank' className='text-2xl cursor-pointer px-4'><AiFillLinkedin /></a>
-                <a href='https://github.com/sphamandla-s' target='_blank' className='text-2xl cursor-pointer px-4'><AiFillGithub /></a>
+                <a href='https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/' target='_blank' rel="noreferrer" className='text-2xl cursor-pointer px-4'><AiFillLinkedin /></a>
+                <a href='https://github.com/sphamandla-s' target='_blank' rel="noreferrer" className='text-2xl cursor-pointer px-4'><AiFillGithub /></a>
               </div>
 
 
@@ -107,14 +107,14 @@ export default function Home() {
           <section className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
             <ul>
               <li className='flex justify-between items-center w-40 h-14 px-4 bg-gray-300 rounded-tr-md dark:bg-gray-700 ml-[-100px] hover:ml-[-10px] hover:rounded '>
-                <a href="https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/" target='_blank' className='flex justify-between w-full items-center'>
+                <a href="https://www.linkedin.com/in/siphamandla-mdletshe-644a7323b/" target='_blank' rel="noreferrer" className='flex justify-between w-full items-center'>
                   <>
                     Linkedin <AiFillLinkedin size={30} />
                   </>
                 </a>
               </li>
               <li className='flex justify-between items-center w-40 h-14 px-4 bg-gray-300 dark:bg-gray-700 ml-[-100px] hover:ml-[-10px] hover:rounded '>
-                <a href="https://github.com/sphamandla-s" target='_blank' className='flex justify-between w-full items-center'>
+                <a href="https://github.com/sphamandla-s" target='_blank' rel="noreferrer" className='flex justify-between w-full items-center'>
                   <>
                     GitHub <BsGithub size={30} />
                   </>
@@ -128,7 +128,7 @@ export default function Home() {
                 </a>
               </li>
               <li className='flex justify-between items-center w-40 h-14 px-4 bg-gray-300 dark:bg-gray-700 ml-[-100px] hover:ml-[-10px] rounded-br-md hover:rounded '>
-                <a href="./Siphamandla Mdletshe Developer Resume.pdf" target='_blank' download={true} className='flex justify-between w-full items-center'>
+                <a href="./Siphamandla Mdletshe Developer Resume.pdf" target='_blank' rel="noreferrer" download={true} className='flex justify-between w-full items-center'>
                   <>
                     Resume <BsFillPersonFill size={30} />
                   </>
