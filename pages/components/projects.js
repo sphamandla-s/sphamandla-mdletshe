@@ -2,14 +2,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
 import { HiArrowCircleRight, HiLink } from 'react-icons/hi'
-import DemoImg from 'public/assets/images/contact-img.svg'
 import SpaceWars from 'public/assets/images/ai-takeda--461rTEnnso-unsplash.jpg'
 import Password from 'public/assets/images/regularguy-eth-j7mGBT2hyM8-unsplash.jpg'
 import Notify from 'public/assets/images/sigmund-xLZ9EP4hJtQ-unsplash.jpg'
 import Portfolio from 'public/assets/images/Screenshot from 2023-03-01 18-13-24.png'
-import Advice from 'public/assets/images/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg'
+import Slogger from 'public/assets/images/florian-klauer-mk7D-4UCfmg-unsplash.jpg'
 import Flash from 'public/assets/images/luis-villasmil-mlVbMbxfWI4-unsplash.jpg'
-import Task from 'public/assets/images/contact-img.svg'
+import Task from 'public/assets/images/nathan-dumlao-5Hl5reICevY-unsplash.jpg'
 
 
 
@@ -41,12 +40,14 @@ export const Projects = () => {
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
                     <Image src={Flash} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
-                        <h3 className="mb-5 text-2xl font-bold">Slogger</h3>
+                        <h3 className="mb-5 text-2xl font-bold">Flashcards Pro</h3>
                         <p>
-                            Pro Manager is a web-based project management tool that helps teams manage
-                            their projects using the Agile methodology.
+                            An app designed to make it easy for anyone to
+                            create and manage their own flashcards. The app uses OpenAI's
+                            API to summarize any text to 20 words or less, making it easy
+                            for the user to understand and create flashcards.
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/pro_mananger" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/Flashcards-Pro" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
@@ -96,16 +97,16 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-lg group m-2 h-96">
-                    <Image src={Advice} alt={''} className="group-hover:scale-110 duration-500 h-full" />
+                    <Image src={Slogger} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
-                        <h3 className="mb-5 text-2xl font-bold">Advice Generator</h3>
+                        <h3 className="mb-5 text-2xl font-bold">Slogger</h3>
                         <p>
-                            The application is designed to provide users with quick and easy access to
-                            useful advice that can help them make better decisions or improve their
-                            lives in some way.
+                        Slogger is a social media-style blog platform that allows users to 
+                        post their own blogs, view other users' blogs, and interact with 
+                        them through comments, likes, and shares.
 
                         </p>
-                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/advice-generator-app" target="_blank" ><HiLink /></a>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/slogger" target="_blank" ><HiLink /></a>
                     </div>
                 </div>
                 <div className=" relative overflow-hidden rounded-lg group mx-2 h-96">
