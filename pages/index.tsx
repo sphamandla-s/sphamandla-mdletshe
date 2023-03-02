@@ -1,22 +1,22 @@
 import Head from 'next/head'
-import { AiFillLinkedin, AiFillGithub, AiOutlineArrowDown} from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiOutlineArrowDown } from 'react-icons/ai'
 import { BsSunFill, BsMoonStarsFill, BsGithub, BsFillPersonFill } from 'react-icons/bs'
-import { HiOutlineMail} from 'react-icons/hi'
+import { HiOutlineMail } from 'react-icons/hi'
 import { BiMenuAltRight } from 'react-icons/bi'
 import Image from 'next/image';
 import BannerImg from '../public/assets/images/astrocat.png';
 import { useState } from 'react';
-import { Education } from './components/Education';
-import { Skills } from './components/Skills';
-import { Projects } from './components/projects';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Projects from './components/projects';
 
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [tabs, setTabs] = useState('skills');
   const [nav, setNav] = useState(false);
-  
-  
+
+
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -29,9 +29,9 @@ export default function Home() {
         <header className=' min-screen'>
           <nav className='py-10 mb-12 flex justify-between align-middle'>
             <div className="bg-rose-500 rounded-tl-2xl rounded-tr-xl rounded-br-3xl rounded-bl-xl w-28">
-            <h1 id="logo" className='text-3xl text-center font-thin'>
-              SSM
-            </h1>
+              <h1 id="logo" className='text-3xl text-center font-thin'>
+                SSM
+              </h1>
             </div>
 
             <div className="flex items-center">
@@ -78,13 +78,13 @@ export default function Home() {
             <section id='banner' className='py-10'>
               <div className="flex flex-col items-center justify-center md:flex-row">
                 <div className="flex-col">
-                  
+
                   <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
                   <h3 className='text-2xl py-2 text-blue-500'>Full stack Software Developer</h3>
                   <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400 max-w-md'>
-                  I have a passion for problem-solving, innovation, and creating high-quality products. 
-                  Proficient in multiple programming languages and experienced in various software 
-                  development methodologies, always eager to learn and collaborate on meaningful projects.
+                    I have a passion for problem-solving, innovation, and creating high-quality products.
+                    Proficient in multiple programming languages and experienced in various software
+                    development methodologies, always eager to learn and collaborate on meaningful projects.
                   </p>
 
                   <div className="resume py-4 text-center">
@@ -178,8 +178,8 @@ export default function Home() {
               <form action="https://getform.io/f/c8d0c9cd-2917-496b-ad84-df1aed385a0e" method="post" className='flex flex-col w-full md:w-1/2'>
                 <input type="text" name='name' placeholder='Enter Your Name' className='p-2 bg-transparent rounded-md focus:outline-none border-2' />
                 <input type="text" name='email' placeholder='Enter email' className='p-2 bg-transparent rounded-md focus:outline-none border-2 my-4' />
-                <textarea name="message" className='rounded-md focus:outline-none p-2 bg-transparent border-2' placeholder='Type Your Message'  rows={10}></textarea>
-                <button  className='bg-gradient-to-r from-rose-600 to-blue-600 m-auto px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-500'>Talk To Me</button>
+                <textarea name="message" className='rounded-md focus:outline-none p-2 bg-transparent border-2' placeholder='Type Your Message' rows={10}></textarea>
+                <button className='bg-gradient-to-r from-rose-600 to-blue-600 m-auto px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-500'>Talk To Me</button>
               </form>
             </div>
 
