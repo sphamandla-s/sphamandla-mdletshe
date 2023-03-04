@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { BiMenuAltRight } from 'react-icons/bi'
 import Image from 'next/image';
 import BannerImg from '../public/assets/images/astrocat.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/projects';
@@ -15,6 +15,45 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [tabs, setTabs] = useState('skills');
   const [nav, setNav] = useState(false);
+
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState('');
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const toRotate = ['Full stack Software Developer.', 'Mobile Developer.', 'Web Developer.', 'Data Science.', 'DevOps.']
+  const period = 2000;
+
+
+  useEffect(() => {
+      let ticker = setInterval(() => {
+          tick()
+      }, delta);
+
+      return () => { clearInterval(ticker) }
+  }, [text])
+
+
+  const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+      setText(updatedText);
+
+
+      if (isDeleting) {
+          setDelta(prevDelta => prevDelta / 2)
+      }
+
+      if (!isDeleting && updatedText === fullText) {
+          setIsDeleting(true);
+          setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+          setIsDeleting(false);
+          setLoopNum(loopNum + 1)
+          setDelta(500)
+      }
+
+  }
 
 
   return (
@@ -28,10 +67,12 @@ export default function Home() {
       <main className='bg-white px-10 dark:bg-gray-900 dark:text-white'>
         <header className=' min-screen'>
           <nav className='py-10 mb-12 flex justify-between align-middle'>
-            <div className="bg-rose-500 rounded-tl-2xl rounded-tr-xl rounded-br-3xl rounded-bl-xl w-28">
+            <div className=' border-rose-500 border rounded-tl-full rounded-bl-full rounded-tr-full rounded-br-full w-28 flex justify-center items-center'>
+            <div className=" border-blue-500 border rounded-tl-full rounded-bl-full rounded-tr-full rounded-br-full w-28">
               <h1 id="logo" className='text-3xl text-center font-thin'>
-                SSM
+                <a href="#banner"> SSM</a>
               </h1>
+            </div>
             </div>
 
             <div className="flex items-center">
@@ -80,8 +121,8 @@ export default function Home() {
                 <div className="flex-col">
 
                   <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
-                  <h3 className='text-2xl py-2 text-blue-500'>Full stack Software Developer</h3>
-                  <p className='font-medium py-5 leading-6 text-gray-800 dark:text-gray-400 max-w-md'>
+                  <h3 className=' text-2xl md:text-4xl py-2 text-blue-500'><span className='border-r border-rose-500'>{text}</span></h3>
+                  <p className='font-medium py-5 leading-6 text-gray-800  dark:text-gray-400 max-w-md'>
                     I have a passion for problem-solving, innovation, and creating high-quality products.
                     Proficient in multiple programming languages and experienced in various software
                     development methodologies, always eager to learn and collaborate on meaningful projects.
