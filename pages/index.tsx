@@ -15,7 +15,6 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [tabs, setTabs] = useState('skills');
   const [nav, setNav] = useState(false);
-
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -117,10 +116,10 @@ export default function Home() {
           <div className=' lg:px-36'>
 
             <section id='banner' className='py-10'>
-              <div className="flex flex-col items-center justify-center md:flex-row">
+              <div className="flex flex-col items-center md:text-start text-center justify-center md:flex-row">
                 <div className="flex-col">
 
-                  <h1 className='text-4xl sm:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
+                  <h1 className='text-5xl md:text-7xl py-2 font-bold text-rose-600'>Siphamandla Mdletshe</h1>
                   <h3 className=' text-2xl md:text-4xl py-2 text-blue-500'><span className='border-r border-rose-500'>{text}</span></h3>
                   <p className='font-medium py-5 leading-6 text-gray-800  dark:text-gray-400 max-w-md'>
                     I have a passion for problem-solving, innovation, and creating high-quality products.
@@ -128,7 +127,7 @@ export default function Home() {
                     development methodologies, always eager to learn and collaborate on meaningful projects.
                   </p>
 
-                  <div className="resume py-4 text-center">
+                  <div className="resume py-2 text-center mx-auto">
                     <a href='./Siphamandla Mdletshe Developer Resume.pdf' target='_blank' download={true} className='group bg-gradient-to-r from-rose-600 to-blue-600 py-2 px-6 text-white rounded-md mt-8 flex w-fit items-center gap-2 hover:scale-110 duration-300'>RESUME <span className='group-hover:rotate-90 duration-300'><AiOutlineArrowDown /></span></a>
                   </div>
                 </div>
