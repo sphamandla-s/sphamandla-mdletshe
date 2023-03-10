@@ -89,7 +89,7 @@ export default function Home() {
               </div>
 
 
-              <div className="themes px-4">
+              <div className="themes px-4 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-full py-2">
                 {darkMode ? <span onClick={() => setDarkMode(!darkMode)} className='text-2xl cursor-pointer'><BsSunFill /></span> : <span onClick={() => setDarkMode(!darkMode)} className={'text-2xl cursor-pointer'}><BsMoonStarsFill /></span>}
               </div>
 
@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
 
 
-                <div className='relative mx-auto bg-gradient-to-b from-yellow-400 rounded-full w-80 h-80 mt-8'>
+                <div className='relative mx-auto bg-gradient-to-b from-yellow-500 rounded-full w-80 h-80 mt-8'>
                   <Image src={BannerImg} alt={'my profile'} />
                 </div>
               </div>
