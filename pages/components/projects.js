@@ -9,10 +9,11 @@ import Portfolio from 'public/assets/images/Screenshot from 2023-03-01 18-13-24.
 import Slogger from 'public/assets/images/florian-klauer-mk7D-4UCfmg-unsplash.jpg'
 import Flash from 'public/assets/images/luis-villasmil-mlVbMbxfWI4-unsplash.jpg'
 import Task from 'public/assets/images/nathan-dumlao-5Hl5reICevY-unsplash.jpg'
+import Loans from 'public/assets/images/19197296.jpg'
 
 
 
-export default function Projects(){
+export default function Projects() {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -38,6 +39,19 @@ export default function Projects(){
             </h1>
 
             <Carousel responsive={responsive} infinite={true} className="pt-20">
+                <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
+                    <Image src={Loans} alt={''} className="group-hover:scale-110 duration-500 h-full" />
+                    <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
+                        <h3 className="mb-5 text-2xl font-bold">LoanUp</h3>
+                        <p>
+                            loan management system(Reducing Balance Method to calculate the EMI) 
+                            with a client and a server. Server is built using Express, Node.js, and MongoDB. 
+                            It provides various endpoints that allow users to register,
+                            take a loan, view their payments, and make payments.
+                        </p>
+                        <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/loans" target="_blank" rel="noreferrer" ><HiLink /></a>
+                    </div>
+                </div>
                 <div className=" relative overflow-hidden rounded-md group mx-2 h-96">
                     <Image src={Flash} alt={''} className="group-hover:scale-110 duration-500 h-full" />
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
@@ -102,9 +116,9 @@ export default function Projects(){
                     <div className=" flex  flex-col justify-center items-center text-center absolute bottom-0 left-0 w-full h-full mb-[-500px] py-0 px-10 bg-gradient-to-t from-red-600 to-slate-700 text-white group-hover:mb-[1px] duration-700">
                         <h3 className="mb-5 text-2xl font-bold">Slogger</h3>
                         <p>
-                        Slogger is a social media-style blog platform that allows users to 
-                        post their own blogs, view other users blogs, and interact with 
-                        them through comments, likes, and shares.
+                            Slogger is a social media-style blog platform that allows users to
+                            post their own blogs, view other users blogs, and interact with
+                            them through comments, likes, and shares.
 
                         </p>
                         <a className="mt-5 bg-white h-16 w-16 rounded-full text-rose-500 leading-5 text-xl overflow-hidden flex flex-col items-center justify-center" href="https://github.com/sphamandla-s/slogger" target="_blank" rel="noreferrer" ><HiLink /></a>
